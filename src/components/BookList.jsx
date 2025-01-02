@@ -8,7 +8,7 @@ const BookList = ({ query }) => {
 
     // &langRestrict=en&maxResults=20&orderBy=newest&filter=free-ebooks&key=${API_KEY}
 
-    const API_KEY = process.env.REACT_APP_GOOGLE_BOOKS_API_KEY;
+    //const API_KEY = process.env.REACT_APP_GOOGLE_BOOKS_API_KEY;
 
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const BookList = ({ query }) => {
             setError(null);
             try {
                 const response = await fetch(
-                    `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=0&maxResults=40&orderBy=newest`
+                    `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=0&maxResults=40`
                 );
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
