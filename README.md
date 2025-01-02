@@ -9,6 +9,14 @@ This project is a Book Reading App that allows users to search for books using t
 - Responsive design for a great user experience on all devices
 - Call-to-action section to encourage users to join
 
+## Screenshots
+
+### Home Page
+![Home Page](./screenshots/home.png)
+
+### Book List
+![Book List](./screenshots/book-list.png)
+
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
